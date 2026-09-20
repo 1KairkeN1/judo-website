@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Judo - Contact & Registration</title>
+</head>
+<body>
+
+    <header>
+        <h1>JUDO: The Gentle Way</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dojo Registration</h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Member Registration Form</legend>
+
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email">
+                    </p>
+
+                    <p>
+                        <label for="age">Age (Years):</label><br>
+                        <input type="number" id="age" name="age" min="5" max="99">
+                    </p>
+
+                    <p>
+                        <label for="start-date">Preferred Start Date:</label><br>
+                        <input type="date" id="start-date" name="start-date">
+                    </p>
+
+                    <p>
+                        <label>Current Experience Level:</label><br>
+                        <input type="radio" id="exp-beginner" name="experience" value="beginner" checked>
+                        <label for="exp-beginner">Beginner (No belt)</label><br>
+                        <input type="radio" id="exp-intermediate" name="experience" value="intermediate">
+                        <label for="exp-intermediate">Intermediate (Yellow/Green)</label><br>
+                        <input type="radio" id="exp-advanced" name="experience" value="advanced">
+                        <label for="exp-advanced">Advanced (Brown/Black)</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="rules-agree" name="rules-agree" required>
+                        <label for="rules-agree">I agree to abide by the Dojo Code of Conduct</label>
+                    </p>
+
+                    <p>
+                        <label for="comments">Inquiry / Previous Martial Arts Background:</label><br>
+                        <textarea id="comments" name="comments" rows="5" cols="40" maxlength="300"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Submit Dojo Registration</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
